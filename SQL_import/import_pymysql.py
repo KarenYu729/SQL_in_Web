@@ -1,7 +1,7 @@
 import pymysql
 
 # connect MySQL
-conn = pymysql.connect(host="127.0.0.1", port=3306, user='root', password="348432", charset='utf8', db="sql_invoicing")
+conn = pymysql.connect(host="127.0.0.1", port=3306, user='root', password="****", charset='utf8', db="sql_invoicing")
 cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
 
 # send
