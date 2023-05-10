@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/plugins/bootstrap-3.4.1-dist/css/bootstrap.css">
+</head>
+<body>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.allaboutbirds.org/cams/wp-content/themes/birdpress2/images/cornell-lab-logo.svg"
+                     width="95px" height="25px">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <table class="table">
+        <h3>{{title}}</h3>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Concern</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in data_list %}
+        <tr>
+            <th scope="row">1</th>
+            <td>{{item}}</td>
+            <td>Low Concern</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>

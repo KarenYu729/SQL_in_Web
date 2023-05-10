@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .container th {
+            width: 200px;
+        }
+
+        .container td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 style="color: darkred; text-align: center">User list</h2>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>name</th>
+            <th>email</th>
+            <th>password</th>
+            <th>mobile</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for row in data_list %}
+        <tr>
+            <td>{{ data_list.index(row)+1 }}</td>
+            <td>{{ row.user }}</td>
+            <td>{{ row.email }}</td>
+            <td>{{ row.password }}</td>
+            <td>{{ row.mobile }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>

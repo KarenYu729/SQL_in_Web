@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .container input {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form method="POST" action="/add/user">
+        <h2 style="color: darkred;">User Information</h2>
+        <input type="text" name="user" placeholder="User Name" style="display: block"/>
+        <input type="text" name="email" placeholder="Email" style="display: block"/>
+        <input type="text" name="mobile" placeholder="Mobile" style="display: block"/>
+        <input type="password" name="psw" placeholder="Password" style="display: block"/>
+        <input type="submit" value="Submit" style="display: block"/>
+    </form>
+</div>
+</body>
+</html>
