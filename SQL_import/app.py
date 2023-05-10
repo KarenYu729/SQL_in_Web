@@ -24,7 +24,7 @@ def add_user():
     print(username, email, mobile, password)
 
     # connect MySQL
-    conn = pymysql.connect(host="127.0.0.1", port=3306, user='root', password="348432", charset='utf8',
+    conn = pymysql.connect(host="127.0.0.1", port=3306, user='root', password="****", charset='utf8',
                            db="web_intro")
     cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
 
@@ -49,7 +49,7 @@ def show_user():
     import pymysql
 
     # connect MySQL
-    conn = pymysql.connect(host="127.0.0.1", port=3306, user='root', password="348432", charset='utf8',
+    conn = pymysql.connect(host="127.0.0.1", port=3306, user='root', password="****", charset='utf8',
                            db="web_intro")
     cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
 
